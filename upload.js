@@ -18,7 +18,7 @@ fr.onload = f => {
     }
   }
   
-  const url = idlink;
+  const url = 'https://script.google.com/macros/s/AKfycbzQMueQkCPOKZ5j1X_ei9m8mJ3dYOWmuRbLL-eh2u9yRHL5O6Y/exec';
   
   const qs = new URLSearchParams({filename: newName, mimeType: file.type});  // Modified
   fetch(`${url}?${qs}`, {method: "POST", body: JSON.stringify([...new Int8Array(f.target.result)])})
